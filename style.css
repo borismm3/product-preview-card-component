@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --darker-cyan: hsl(156, 42%, 17%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--cream);
+  font-size: 14px;
+}
+
+.main-container {
+  background-color: var(--white);
+  width: 640px;
+  height: 475px;
+  overflow: hidden;
+  border-radius: 15px;
+  margin: 200px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.photo {
+  width: 50%;
+}
+
+.content {
+  width: 50%;
+  padding-block: inherit;
+  padding: 30px 40px 30px 30px;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 50;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--dark-grayish-blue);
+}
+
+.name-product {
+  font-family: "Fraunces", sans-serif;
+  font-size: 2.1rem;
+  color: var(--very-dark-blue);
+  font-weight: bold;
+}
+
+.description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  color: var(--dark-grayish-blue);
+  line-height: 1.5rem;
+}
+
+.price-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.price-form .offer {
+  font-family: "Fraunces",  sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--dark-cyan);
+}
+
+.price-form .original-price {
+  font-family: "Montserrat", sans-serif;
+  color: var(--dark-grayish-blue);
+  margin-left: 20px;
+  text-decoration: line-through;
+}
+
+.content button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  border-style: none;
+  border-radius: 10px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  stroke-width: 1;
+}
+
+.content button:hover {
+  background-color: var(--darker-cyan);
+  cursor: pointer;
+}
+
+.content button p {
+  margin-left: 10px;
+}
